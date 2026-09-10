@@ -8,7 +8,7 @@ export default function Hero({ onOpenRegister }) {
         <img 
           src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-401464,resizemode-75,msid-70546630/markets/commodities/news/rbi-building-its-forex-kitty-with-gold-bricks.jpg" 
           alt="Industrial Gold Mining Background" 
-          className="w-full h-full object-cover opacity-100 scale-105"
+          className="w-full h-full object-cover opacity-80 scale-105"
         />
         {/* Semi-transparent gradient overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/40" />

@@ -49,7 +49,7 @@ export default function Features() {
               
               <div>
                 {/* Image Icon Box */}
-                <div className="mb-6  from-amber-600/20 to-yellow-400/20 w-18 h-18 rounded-1xl flex items-center justify-center p-3 overflow-hidden group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-6  from-amber-600/20 to-yellow-400/20 w-25 h-25 ml-18 rounded-1xl flex items-center justify-center p-3 overflow-hidden group-hover:scale-110 transition-transform duration-300">
                   <img 
                     src={feat.imgSrc} 
                     alt={feat.title} 
