@@ -1,23 +1,26 @@
 import React from 'react';
+import featureImg1 from '../assets/feature-1.jpg';  
+import featureImg2 from '../assets/feature-2.jpg';
+import featureImg3 from '../assets/feature-3.jpg'; // Teesri feature image ka naam yahan dalein
 
 export default function Features() {
   const featuresList = [
     {
       title: "Decentralized Gold Backing",
       desc: "Every digital asset unit issued on our platform corresponds directly to audited bullion metrics stored securely in certified global vaults.",
-      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEy3vra_BOS-O0nNHMQe-KN-pjCQEBF2Sx1RZ_2IWubQ&s=10", // Yahan pehli image ka URL dalein
+      imgSrc: featureImg1,
       animClass: "hover:-translate-x-1"
     },
     {
       title: "Automated Daily Payouts",
       desc: "Smart-contract driven architecture ensures your mining yields are credited directly to your account balance every 24 hours seamlessly.",
-      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3eM_ewdBng01kL1QBKWj1LQWQzbE2lh_bBd3IdNBmlg&s=10", 
+      imgSrc: featureImg2, 
       animClass: "hover:-translate-y-2"
     },
     {
       title: "Institutional Security",
       desc: "Protected by military-grade encryption, multi-sig hardware cold storage, and comprehensive asset insurance policies for total safety.",
-      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9KN2R9NkwQqjAnm2PJdkTRob6sjJd0ZdRog4vuDgl_g&s=10", 
+      imgSrc: featureImg3, 
       animClass: "hover:translate-x-1"
     }
   ];
@@ -49,11 +52,11 @@ export default function Features() {
               
               <div>
                 {/* Image Icon Box */}
-                <div className="mb-6  from-amber-600/20 to-yellow-400/20 w-25 h-25 ml-18 rounded-1xl flex items-center justify-center p-3 overflow-hidden group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-6 ml-15 bg-amber-500/10 border border-amber-500/30 w-25 h-20 rounded-2xl flex items-center justify-center p-3 overflow-hidden group-hover:scale-110 transition-transform duration-300">
                   <img 
                     src={feat.imgSrc} 
                     alt={feat.title} 
-                    className="w-full h-full object-contain filter drop-shadow" 
+                    className="w-full h-full object-cover rounded-xl filter drop-shadow" 
                   />
                 </div>
                 

@@ -1,4 +1,5 @@
 import React from 'react';
+import heroBg from '../assets/hero-bg.avif'; // Yahan apne image ka sahi filename/path dalein
 
 export default function Hero({ onOpenRegister }) {
   return (
@@ -6,12 +7,12 @@ export default function Hero({ onOpenRegister }) {
       {/* Background Image with Balanced Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-401464,resizemode-75,msid-70546630/markets/commodities/news/rbi-building-its-forex-kitty-with-gold-bricks.jpg" 
+          src={heroBg} 
           alt="Industrial Gold Mining Background" 
-          className="w-full h-full object-cover opacity-80 scale-105"
+          className="w-full h-full object-cover opacity-85 scale-105"
         />
         {/* Semi-transparent gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -63,7 +64,7 @@ export default function Hero({ onOpenRegister }) {
 
         {/* Right Graphic card representing Gold Bars & Mining */}
         <div className="relative flex justify-center">
-          <div className="relative w-full max-w-md bg-black/60 border border-amber-500/40 rounded-2xl p-6 backdrop-blur-xl shadow-2xl">
+          <div className="relative w-full max-w-md bg-black/70 border border-amber-500/40 rounded-2xl p-6 backdrop-blur-xl shadow-2xl">
             <div className="absolute -top-3 -right-3 bg-yellow-400 text-black font-black text-xs px-3 py-1 rounded-full uppercase shadow">
               Live Assets
             </div>

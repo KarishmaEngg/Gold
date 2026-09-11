@@ -1,21 +1,23 @@
 import React from 'react';
-
+import aboutImg1 from '../assets/about-1.jpg';
+import aboutImg2 from '../assets/about-2.jpg'; 
+import aboutImg3 from '../assets/about-3.jpg'; 
 export default function About() {
   const aboutCards = [
     {
       title: "Physical Backing",
       desc: "Every digital asset unit issued on our platform corresponds directly to audited bullion metrics stored securely in certified global vaults.",
-      imgSrc:"https://assets.upstox.com/content/assets/images/news/gold-etf-return-news.webp", // Yahan apni pehli image ka URL dalein
+      imgSrc: aboutImg1,
     },
     {
       title: "Bitcoin Liquidity",
       desc: "Quick deposits and lightning-fast automated withdrawals processed securely using Bitcoin and stablecoin gateway integration.",
-      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eMifj6DUM4JcGTWxUQ3L92m5q9cvYd38vpfB-jkWHw&s=10", // Yahan doosri image ka URL dalein
+      imgSrc: aboutImg2,
     },
     {
       title: "Military-Grade Security",
       desc: "Advanced DDoS defense, hardware cold wallets, and multi-signature infrastructure safeguarding your principal investment funds.",
-      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRERzpt8w9ezv6lTd7GvO1_gJFjDaEtaViz8xLw1H3vMg&s=10", // Yahan teesri image ka URL dalein
+      imgSrc: aboutImg3,
     }
   ];
 
@@ -39,14 +41,14 @@ export default function About() {
           {aboutCards.map((card, index) => (
             <div 
               key={index} 
-              className="bg-slate-900/60 border border-amber-500/20 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300 group shadow-xl hover:shadow-amber-500/5"
+              className="bg-slate-900/60 border border-amber-500/20 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300 group shadow-xl hover:shadow-amber-500/5 flex flex-col items-center text-center md:items-start md:text-left"
             >
-              {/* Small Image Icon Container */}
-              <div className="w-17 h-18 bg-amber-500/10 rounded-xl flex items-center justify-center mb-6 ml-12 border border-amber-500/30 overflow-hidden p-2 group-hover:scale-110 transition-transform duration-300">
+              {/* Image Icon Container */}
+              <div className="w-25 h-20 bg-amber-500/10 rounded-xl flex items-center justify-center mb-6 ml-15 border border-amber-500/30 overflow-hidden p-2.5 group-hover:scale-110 transition-transform duration-300">
                 <img 
                   src={card.imgSrc} 
                   alt={card.title} 
-                  className="w-full h-full object-contain filter drop-shadow"
+                  className="w-full h-full object-cover rounded-lg filter drop-shadow"
                 />
               </div>
 

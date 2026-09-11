@@ -32,7 +32,7 @@ export default function Navbar({ onOpenLogin, onOpenRegister }) {
               <span className="text-black font-black text-xl tracking-tighter">FG</span>
             </div>
             <div>
-              <span className="text-lg sm:text-xl font-black tracking-wider bg-gradient-to-r from-yellow-200 via-amber-400 to-yellow-600 bg-clip-text text-transparent block">
+              <span className="text-lg sm:text-xl font-black tracking-wider bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-600 bg-clip-text text-transparent block">
                 FUTURE GOLD
               </span>
               <span className="text-[9px] tracking-[0.2em] text-amber-400/80 font-bold block uppercase">Crypto & Mining</span>

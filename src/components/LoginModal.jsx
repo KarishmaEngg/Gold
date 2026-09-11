@@ -43,7 +43,7 @@ export default function LoginModal({ isOpen, onClose, onSwitchToRegister }) {
               placeholder="••••••••"
             />
           </div>
-          <button type="submit" className="w-full bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-bold py-3 rounded-lg uppercase tracking-wider text-sm shadow-lg hover:opacity-95 transition-opacity">
+          <button type="submit" className="w-full bg-gradient-to-r from-yellow-500 to-amber-600 text-white font-bold py-3 rounded-lg uppercase tracking-wider text-sm shadow-lg hover:opacity-95 transition-opacity">
             Login Now
           </button>
         </form>
